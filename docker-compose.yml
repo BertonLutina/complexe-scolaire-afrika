@@ -1,0 +1,35 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: csa-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 4001
+      SMTP_USER: ${SMTP_USER}
+      SMTP_PASS: ${SMTP_PASS}
+      CONTACT_TO: ${CONTACT_TO}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.csa-api.rule=Host(`api.complexe-scolaire-afrika.com`)
+      - traefik.http.routers.csa-api.entrypoints=websecure
+      - traefik.http.routers.csa-api.tls.certresolver=letsencrypt
+      - traefik.http.services.csa-api.loadbalancer.server.port=4001
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL}
+    container_name: csa-web
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.csa-web.rule=Host(`complexe-scolaire-afrika.com`) || Host(`www.complexe-scolaire-afrika.com`)
+      - traefik.http.routers.csa-web.entrypoints=websecure
+      - traefik.http.routers.csa-web.tls.certresolver=letsencrypt
+      - traefik.http.services.csa-web.loadbalancer.server.port=80
