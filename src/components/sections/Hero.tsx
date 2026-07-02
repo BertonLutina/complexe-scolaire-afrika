@@ -5,8 +5,7 @@ const SCHOOL_FOUNDED_YEAR = 1988
 export default function Hero() {
   const now = new Date()
   const currentYear = now.getFullYear()
-  const currentMonth = now.getMonth() // 0-indexed: 8 = September
-  const schoolYearStart = currentMonth >= 8 ? currentYear : currentYear - 1
+  const schoolYearStart = currentYear
   const schoolYearEnd = schoolYearStart + 1
   const yearsExperience = Math.max(0, new Date().getFullYear() - SCHOOL_FOUNDED_YEAR)
   const experienceLabel = yearsExperience === 1 ? '1 an' : `${yearsExperience} ans`
@@ -119,7 +118,7 @@ export default function Hero() {
           <div className="order-2 flex justify-center lg:order-2 lg:col-span-5 lg:items-center">
             <div className="relative mt-2 w-full max-w-[280px] animate-float sm:max-w-sm md:max-w-md lg:mt-0 lg:max-w-md">
               <div className="absolute inset-0 rotate-6 rounded-3xl bg-afrika-orange/25 blur-2xl" />
-              <div className="relative rounded-3xl border border-afrika-sky-light/35 bg-white/15 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+              <div className="relative rounded-3xl border border-afrika-sky-light/35 bg-white p-6 shadow-2xl sm:p-8">
                 <img
                   src="/images/logo.png"
                   alt="Logo du Complexe Scolaire Afrika — carte d'Afrique, livre ouvert et symboles scolaires"
