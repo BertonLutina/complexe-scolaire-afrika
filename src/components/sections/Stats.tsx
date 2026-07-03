@@ -5,7 +5,7 @@ const stats = [
   {
     icon: MapPin,
     label: 'Adresse',
-    value: '13, 7ème Rue Industriel, C/Limeté',
+    value: 'Nº 16, 7ème Rue, Quartier Industriel, Limete',
     color: 'afrika-orange',
   },
   {

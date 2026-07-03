@@ -6,7 +6,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Adresse',
-    value: '13, 7ème Rue Industriel\nC/Limeté, Kinshasa, RDC',
+    value: 'Nº 16, 7ème Rue, Quartier Industriel\nCommune de Limete, Kinshasa, RDC',
     color: 'afrika-orange',
   },
   {

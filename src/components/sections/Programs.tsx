@@ -30,21 +30,20 @@ const cycles = [
   {
     icon: GraduationCap,
     title: 'Humanités',
-    subtitle: '7 options disponibles',
+    subtitle: '6 options disponibles',
     description: 'Formation complète préparant aux études supérieures et à la vie professionnelle avec un encadrement de qualité.',
     color: 'afrika-gold',
-    features: ['Bio-chimie', 'Math-Physique', 'Pédagogie', 'Commerce'],
+    features: ['Scientifique', 'Littéraire', 'Commercial et Gestion', 'Pédagogie'],
   },
 ]
 
 const options = [
-  'Bio-chimie',
-  'Mathématique-Physique',
-  'Latin-Philo',
-  'Commercial',
-  'Pédagogie générale',
-  'Série A (Droit)',
-  'Série A (Lettres)',
+  'Électricité',
+  'Littéraire',
+  'Commercial et Gestion',
+  'Coupe et Couture',
+  'Pédagogie',
+  'Scientifique',
 ]
 
 export default function Programs() {
@@ -128,7 +127,7 @@ export default function Programs() {
             <div>
               <h3 className="mb-2 font-display text-xl font-bold text-white sm:text-2xl">Options d'Humanité</h3>
               <p className="max-w-xl text-sm text-white/60 sm:text-base">
-                7 filières d'excellence pour préparer l'avenir professionnel de chaque élève selon ses aspirations et ses talents.
+                6 filières d'excellence pour préparer l'avenir professionnel de chaque élève selon ses aspirations et ses talents.
               </p>
             </div>
             <div className="flex w-full flex-wrap gap-2 sm:gap-3 lg:max-w-xl lg:justify-end xl:max-w-none">
