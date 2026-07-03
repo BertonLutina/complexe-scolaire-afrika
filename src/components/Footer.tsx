@@ -4,6 +4,7 @@ const quickLinks = [
   { href: '#accueil', label: 'Accueil' },
   { href: '#a-propos', label: 'À Propos' },
   { href: '#cycles', label: 'Nos Cycles' },
+  { href: '#calendrier', label: 'Calendrier Scolaire' },
   { href: '#frais', label: 'Frais Scolaires' },
   { href: '#uniforme', label: 'Uniforme' },
   { href: '#galerie', label: 'Galerie' },
@@ -14,7 +15,7 @@ const cycles = [
   'Maternelle (3, 4, 5 ans)',
   'Primaire (Cycle Complet)',
   'Secondaire (7ème & 8ème)',
-  'Humanité (7 Options)',
+  'Humanité (6 Options)',
 ]
 
 export default function Footer() {
@@ -30,9 +31,9 @@ export default function Footer() {
               <img
                 src="/images/logo.png"
                 alt=""
-                className="h-14 w-auto object-contain shrink-0"
-                width={140}
-                height={140}
+                className="h-20 w-auto object-contain shrink-0 sm:h-24"
+                width={180}
+                height={180}
               />
               <div className="flex flex-col">
                 <span className="text-white/70 font-display font-bold text-xs leading-tight tracking-wide">
@@ -87,9 +88,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-afrika-orange shrink-0 mt-0.5" />
                 <span className="text-white/50 text-sm">
-                  13, 7ème Rue Industriel
+                  Nº 16, 7ème Rue, Quartier Industriel
                   <br />
-                  C/Limeté, Kinshasa, RDC
+                  Commune de Limete, Kinshasa, RDC
                 </span>
               </li>
               <li className="flex items-center gap-3">

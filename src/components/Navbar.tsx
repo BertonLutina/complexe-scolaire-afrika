@@ -5,6 +5,7 @@ const navLinks = [
   { href: '#accueil', label: 'Accueil' },
   { href: '#a-propos', label: 'À Propos' },
   { href: '#cycles', label: 'Cycles' },
+  { href: '#calendrier', label: 'Calendrier' },
   { href: '#frais', label: 'Frais' },
   { href: '#uniforme', label: 'Uniforme' },
   { href: '#galerie', label: 'Galerie' },
@@ -35,9 +36,9 @@ export default function Navbar() {
             <img
               src="/images/logo.png"
               alt=""
-              className="h-9 w-auto shrink-0 object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105 sm:h-11"
-              width={120}
-              height={120}
+              className="h-14 w-auto shrink-0 object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105 sm:h-16 md:h-20"
+              width={160}
+              height={160}
             />
             <div className="hidden min-[380px]:flex flex-col">
               <span className="font-display text-[10px] font-bold uppercase leading-tight tracking-wider text-white/70 sm:text-xs">
