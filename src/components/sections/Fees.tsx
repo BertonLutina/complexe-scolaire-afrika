@@ -92,7 +92,7 @@ export default function Fees() {
         <div className="mb-10 text-center opacity-0 animate-on-scroll md:mb-16">
           <span className="text-sm font-semibold uppercase tracking-widest text-afrika-orange">Frais Scolaires</span>
           <h2 className="mt-3 font-display text-3xl font-black text-afrika-blue sm:text-4xl md:text-5xl md:mb-6 mb-4">
-            Tarifs <span className="text-gradient">2025-2026</span>
+            Tarifs <span className="text-gradient">2026-2027</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-afrika-blue/60 sm:text-lg">
             Des frais de scolarité transparents et accessibles, avec possibilité de paiement en plusieurs tranches.
